@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    // Example 1
+
+let x=6;
+let y=14;
+let z=4;
+let result=x+=y-x++*z;
+console.log(result);
+// x*z (24)
+// y-24 (-10)
+// 6-10 (-4)
+// -4
+
+// Example2
+
+let x=6;
+let y=14;
+let z=4;
+let result2=z=--x-y*5;
+console.log(result);
+// 14*5 (70)
+// --x=5
+// 5-70 (-65)
+// -65
+
+// Example3
+
+let x=6;
+let y=14;
+let z=4;
+let result3=y/=x+5%z;
+console.log(result3);
+// 5%z (1)
+// 1+6 (7)
+// 14/7 (2)
+// 2
+
+// Example4
+
+let x=6;
+let y=14;
+let z=4;
+let result4=z-x++ +y*5;
+console.log(result4);
+// y*5 (70)
+// z-x++ (-2)
+// -2+70 (68)
+// 68
+
+// Example5
+
+let x=6;
+let y=14;
+let z=4;
+let result5=x=y-x++*z;
+console.log(result5);
+// 6*z (24)
+// y-24 (-10)
+// -10
+</script>
+</body>
+</html>
